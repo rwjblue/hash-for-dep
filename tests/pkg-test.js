@@ -15,8 +15,8 @@ describe('pkg', function() {
         bar: '1.0.0',
         dedupped: '1.0.0'
       },
-      path: path.join(fixturesPath, '/node_modules/foo/index.js'),
-      baseDir: path.join(fixturesPath, '/node_modules/foo/')
+      path: path.join(fixturesPath, 'node_modules', 'foo', 'index.js'),
+      baseDir: path.join(fixturesPath, 'node_modules', 'foo') + path.sep
     };
 
     assert.deepEqual(pkg('foo', fixturesPath), expectedPkg);
